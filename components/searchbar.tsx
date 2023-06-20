@@ -28,7 +28,7 @@ const SearchBar: React.FC = () => {
 
     async function handleRandomSearch() {
         const response = await axios.get(
-            `https://www.dnd5eapi.co/api/monsters/goblin`
+            `https://www.dnd5eapi.co/api/Creatures/goblin`
         );
         setSearchResults(response.data);
     }

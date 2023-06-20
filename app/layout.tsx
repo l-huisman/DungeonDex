@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Dungeon Dex',
-  description: 'A place to find all your favorite D&D monsters',
+  description: 'A place to find all your favorite D&D Creatures',
 }
 
 export default function RootLayout({

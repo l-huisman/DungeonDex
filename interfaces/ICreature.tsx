@@ -1,6 +1,6 @@
 import { Size } from "@/enums/Size";
 import { Alignment } from "@/enums/Alignment";
-import { IMonsterSpeed } from "./IMonsterSpeed";
+import { ICreatureSpeed } from "./ICreatureSpeed";
 import { IAbilityScore } from "./IAbilityScore";
 import { ICondition } from "./ICondition";
 import { IDamageType } from "./IDamageType";
@@ -13,7 +13,7 @@ import { ISpecialAbility } from "./ISpecialAbility";
 import { IAttack } from "./IAttack";
 import { IDice } from "./IDice";
 
-export interface IMonster {
+export interface ICreature {
     index: string;
     name: string;
     description: string;
@@ -24,7 +24,7 @@ export interface IMonster {
     armorClass: number;
     hitPoints: number;
     hitDice: IDice;
-    speed: IMonsterSpeed[];
+    speed: ICreatureSpeed[];
     abilityScores: IAbilityScore;
     proficiencies: IProficiency[];
     damageVulnerabilities: IDamageType[];

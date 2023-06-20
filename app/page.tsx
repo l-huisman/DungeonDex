@@ -2,17 +2,17 @@ import Image from 'next/image';
 import goblinImage from '../public/goblin.png';
 import mimicImage from '../public/mimic.png';
 import owlbearImage from '../public/owlbear.png';
-import { MonsterFrame } from '@/components/Monster';
-import { IMonster } from '@/interfaces/IMonster';
+import { CreatureFrame } from '@/components/Creature';
+import { ICreature } from '@/interfaces/ICreature';
 import { Type } from '@/enums/Type';
 import { Size } from '@/enums/Size';
 import { Alignment } from '@/enums/Alignment';
 import { Language } from '@/enums/Language';
-import SearchBar from '@/components/searchbar';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
+import SearchBar from '@/components/SearchBar';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
-const goblin: IMonster = {
+const goblin: ICreature = {
   index: "1",
   name: "Goblin",
   description: "A small, vicious humanoid. It appears as a hairless, warty-skinned goblinoid with a large, toothy maw and a pair of beady, black eyes.",
@@ -80,13 +80,13 @@ const goblin: IMonster = {
     }
   ],
   legendaryActions: [],
-  url: "https://www.dnd5eapi.co/api/monsters/1"
+  url: "https://www.dnd5eapi.co/api/Creatures/1"
 };
 
-const mimic: IMonster = {
+const mimic: ICreature = {
   index: "2",
   name: "Mimic",
-  description: "A shapeshifting monster that disguises itself as an inanimate object, such as a chest or a door. Its adhesive exterior allows it to cling to stone surfaces.",
+  description: "A shapeshifting Creature that disguises itself as an inanimate object, such as a chest or a door. Its adhesive exterior allows it to cling to stone surfaces.",
   size: Size.Medium,
   type: Type.Aberration,
   subtype: "",
@@ -157,10 +157,10 @@ const mimic: IMonster = {
     }
   ],
   legendaryActions: [],
-  url: "https://www.dnd5eapi.co/api/monsters/2"
+  url: "https://www.dnd5eapi.co/api/Creatures/2"
 };
 
-const owlbear: IMonster = {
+const owlbear: ICreature = {
   index: "3",
   name: "Owlbear",
   description: "A large, ferocious creature with the head of an owl and the body of a bear. It is capable of standing on its hind legs and has large, sharp beak.",
@@ -226,7 +226,7 @@ const owlbear: IMonster = {
     }
   ],
   legendaryActions: [],
-  url: "https://www.dnd5eapi.co/api/monsters/3"
+  url: "https://www.dnd5eapi.co/api/Creatures/3"
 };
 
 export default function Home() {
@@ -237,14 +237,13 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-6xl font-bold text-center">Goblin</h1>
         <Image src={goblinImage} alt="Goblin" width={192} height={288} />
-        <MonsterFrame monster={goblin} />
+        <CreatureFrame Creature={goblin} />
         <h1 className="text-6xl font-bold text-center">Mimic</h1>
         <Image src={mimicImage} alt="Mimic" width={192} height={288} />
-        <MonsterFrame monster={mimic} />
+        <CreatureFrame Creature={mimic} />
         <h1 className="text-6xl font-bold text-center">Owlbear</h1>
         <Image src={owlbearImage} alt="Owlbear" width={192} height={288} />
-
-        <MonsterFrame monster={owlbear} />
+        <CreatureFrame Creature={owlbear} />
       </div>
       <Footer />
     </main>
