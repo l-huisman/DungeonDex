@@ -1,0 +1,41 @@
+import { Size } from "@/enums/Size";
+import { Alignment } from "@/enums/Alignment";
+import { IMonsterSpeed } from "./IMonsterSpeed";
+import { IAbilityScore } from "./IAbilityScore";
+import { ICondition } from "./ICondition";
+import { IDamageType } from "./IDamageType";
+import { IProficiency } from "./IProficiency";
+import { ISense } from "./ISense";
+import { Language } from "@/enums/Language";
+import { IChallengeRating } from "./IChallengeRating";
+import { Type } from "@/enums/Type";
+import { ISpecialAbility } from "./ISpecialAbility";
+import { IAttack } from "./IAttack";
+import { IDice } from "./IDice";
+
+export interface IMonster {
+    index: string;
+    name: string;
+    description: string;
+    size: Size;
+    type: Type;
+    subtype: string;
+    alignment: Alignment;
+    armorClass: number;
+    hitPoints: number;
+    hitDice: IDice;
+    speed: IMonsterSpeed[];
+    abilityScores: IAbilityScore;
+    proficiencies: IProficiency[];
+    damageVulnerabilities: IDamageType[];
+    damageResistances: IDamageType[];
+    damageImmunities: IDamageType[];
+    conditionImmunities: ICondition[];
+    senses: ISense[];
+    languages: Language[];
+    challengeRating: IChallengeRating;
+    specialAbilities: ISpecialAbility[];
+    actions: IAttack[];
+    legendaryActions: {}[];
+    url: string;
+}
