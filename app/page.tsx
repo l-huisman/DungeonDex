@@ -2,15 +2,15 @@ import Image from 'next/image';
 import goblinImage from '../public/goblin.png';
 import mimicImage from '../public/mimic.png';
 import owlbearImage from '../public/owlbear.png';
-import Footer from '../components/Footer';
-import SearchBar from '../components/SearchBar';
-import Header from '../components/Header';
 import { MonsterFrame } from '@/components/Monster';
 import { IMonster } from '@/interfaces/IMonster';
 import { Type } from '@/enums/Type';
 import { Size } from '@/enums/Size';
 import { Alignment } from '@/enums/Alignment';
 import { Language } from '@/enums/Language';
+import SearchBar from '@/components/searchbar';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 const goblin: IMonster = {
   index: "1",
