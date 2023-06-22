@@ -8,6 +8,7 @@ export enum Type {
     Fey = "Fey",
     Fiend = "Fiend",
     Giant = "Giant",
+    Goblinoid = "Goblinoid",
     Humanoid = "Humanoid",
     Monstrosity = "Monstrosity",
     Ooze = "Ooze",
