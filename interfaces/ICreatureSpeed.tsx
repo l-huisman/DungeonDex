@@ -1,4 +1,8 @@
 export interface ICreatureSpeed {
-    type: string;
-    speed: number;
+    walk: number;
+    swim?: number;
+    fly?: number;
+    burrow?: number;
+    climb?: number;
+    hover?: boolean;
 }

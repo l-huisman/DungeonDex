@@ -25,7 +25,7 @@ export interface ICreature {
   armorClass: number;
   hitPoints: number;
   hitDice: IDice;
-  speed: ICreatureSpeed[];
+  speed: ICreatureSpeed;
   abilityScores: IAbilityScore;
   proficiencies?: IProficiency[];
   damageVulnerabilities?: IDamageType[];

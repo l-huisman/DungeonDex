@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Provider from './provider'
+import { CreatureContextProvider } from '@/components/context/CreatureContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,6 @@ export default function RootLayout({
           {children}
         </Provider>
       </body>
-    </html>
+    </html >
   )
 }
