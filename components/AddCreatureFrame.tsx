@@ -47,12 +47,12 @@ export const AddCreatureFrame = () => {
                         id="size"
                         defaultValue={creatureContext.creature?.size}
                     >
-                        <option defaultValue={Size.Tiny}>Tiny</option>
-                        <option defaultValue={Size.Small}>Small</option>
-                        <option defaultValue={Size.Medium}>Medium</option>
-                        <option defaultValue={Size.Large}>Large</option>
-                        <option defaultValue={Size.Huge}>Huge</option>
-                        <option defaultValue={Size.Gargantuan}>Gargantuan</option>
+                        <option value={Size.Tiny}>Tiny</option>
+                        <option value={Size.Small}>Small</option>
+                        <option value={Size.Medium}>Medium</option>
+                        <option value={Size.Large}>Large</option>
+                        <option value={Size.Huge}>Huge</option>
+                        <option value={Size.Gargantuan}>Gargantuan</option>
                     </select>
                 </div>
                 <div className="flex items-center justify-between bg-red-600 p-2 rounded-lg">
@@ -63,20 +63,20 @@ export const AddCreatureFrame = () => {
                         id="type"
                         defaultValue={creatureContext.creature?.type}
                     >
-                        <option defaultValue={Type.Aberration}>Aberration</option>
-                        <option defaultValue={Type.Beast}>Beast</option>
-                        <option defaultValue={Type.Celestial}>Celestial</option>
-                        <option defaultValue={Type.Construct}>Construct</option>
-                        <option defaultValue={Type.Dragon}>Dragon</option>
-                        <option defaultValue={Type.Elemental}>Elemental</option>
-                        <option defaultValue={Type.Fey}>Fey</option>
-                        <option defaultValue={Type.Fiend}>Fiend</option>
-                        <option defaultValue={Type.Giant}>Giant</option>
-                        <option defaultValue={Type.Humanoid}>Humanoid</option>
-                        <option defaultValue={Type.Monstrosity}>Monstrosity</option>
-                        <option defaultValue={Type.Ooze}>Ooze</option>
-                        <option defaultValue={Type.Plant}>Plant</option>
-                        <option defaultValue={Type.Undead}>Undead</option>
+                        <option value={Type.Aberration}>Aberration</option>
+                        <option value={Type.Beast}>Beast</option>
+                        <option value={Type.Celestial}>Celestial</option>
+                        <option value={Type.Construct}>Construct</option>
+                        <option value={Type.Dragon}>Dragon</option>
+                        <option value={Type.Elemental}>Elemental</option>
+                        <option value={Type.Fey}>Fey</option>
+                        <option value={Type.Fiend}>Fiend</option>
+                        <option value={Type.Giant}>Giant</option>
+                        <option value={Type.Humanoid}>Humanoid</option>
+                        <option value={Type.Monstrosity}>Monstrosity</option>
+                        <option value={Type.Ooze}>Ooze</option>
+                        <option value={Type.Plant}>Plant</option>
+                        <option value={Type.Undead}>Undead</option>
                     </select>
                 </div>
                 <div className="flex items-center justify-between bg-red-600 p-2 rounded-lg">
@@ -87,21 +87,21 @@ export const AddCreatureFrame = () => {
                         id="subtype"
                         defaultValue={creatureContext.creature?.subtype}
                     >
-                        <option defaultValue={undefined}>None</option>
-                        <option defaultValue={Type.Aberration}>Aberration</option>
-                        <option defaultValue={Type.Beast}>Beast</option>
-                        <option defaultValue={Type.Celestial}>Celestial</option>
-                        <option defaultValue={Type.Construct}>Construct</option>
-                        <option defaultValue={Type.Dragon}>Dragon</option>
-                        <option defaultValue={Type.Elemental}>Elemental</option>
-                        <option defaultValue={Type.Fey}>Fey</option>
-                        <option defaultValue={Type.Fiend}>Fiend</option>
-                        <option defaultValue={Type.Giant}>Giant</option>
-                        <option defaultValue={Type.Humanoid}>Humanoid</option>
-                        <option defaultValue={Type.Monstrosity}>Monstrosity</option>
-                        <option defaultValue={Type.Ooze}>Ooze</option>
-                        <option defaultValue={Type.Plant}>Plant</option>
-                        <option defaultValue={Type.Undead}>Undead</option>
+                        <option value={undefined}>None</option>
+                        <option value={Type.Aberration}>Aberration</option>
+                        <option value={Type.Beast}>Beast</option>
+                        <option value={Type.Celestial}>Celestial</option>
+                        <option value={Type.Construct}>Construct</option>
+                        <option value={Type.Dragon}>Dragon</option>
+                        <option value={Type.Elemental}>Elemental</option>
+                        <option value={Type.Fey}>Fey</option>
+                        <option value={Type.Fiend}>Fiend</option>
+                        <option value={Type.Giant}>Giant</option>
+                        <option value={Type.Humanoid}>Humanoid</option>
+                        <option value={Type.Monstrosity}>Monstrosity</option>
+                        <option value={Type.Ooze}>Ooze</option>
+                        <option value={Type.Plant}>Plant</option>
+                        <option value={Type.Undead}>Undead</option>
                     </select>
                 </div>
                 <div className="flex items-center justify-between bg-red-600 p-2 rounded-lg">
@@ -112,15 +112,15 @@ export const AddCreatureFrame = () => {
                         id="alignment"
                         defaultValue={creatureContext.creature?.alignment}
                     >
-                        <option defaultValue={Alignment.LawfulGood}>Lawful Good</option>
-                        <option defaultValue={Alignment.NeutralGood}>Neutral Good</option>
-                        <option defaultValue={Alignment.ChaoticGood}>Chaotic Good</option>
-                        <option defaultValue={Alignment.LawfulNeutral}>Lawful Neutral</option>
-                        <option defaultValue={Alignment.Neutral}>Neutral</option>
-                        <option defaultValue={Alignment.ChaoticNeutral}>Chaotic Neutral</option>
-                        <option defaultValue={Alignment.LawfulEvil}>Lawful Evil</option>
-                        <option defaultValue={Alignment.NeutralEvil}>Neutral Evil</option>
-                        <option defaultValue={Alignment.ChaoticEvil}>Chaotic Evil</option>
+                        <option value={Alignment.LawfulGood}>Lawful Good</option>
+                        <option value={Alignment.NeutralGood}>Neutral Good</option>
+                        <option value={Alignment.ChaoticGood}>Chaotic Good</option>
+                        <option value={Alignment.LawfulNeutral}>Lawful Neutral</option>
+                        <option value={Alignment.Neutral}>Neutral</option>
+                        <option value={Alignment.ChaoticNeutral}>Chaotic Neutral</option>
+                        <option value={Alignment.LawfulEvil}>Lawful Evil</option>
+                        <option value={Alignment.NeutralEvil}>Neutral Evil</option>
+                        <option value={Alignment.ChaoticEvil}>Chaotic Evil</option>
                     </select>
                 </div>
                 <div className="flex items-center justify-between bg-red-600 p-2 rounded-lg">
@@ -308,7 +308,7 @@ export const AddCreatureFrame = () => {
                     />
                 </div>
                 <div className="flex items-center justify-between bg-red-600 p-2 rounded-lg">
-                    <label className="text-white font-medium w-1/4 mr-2 w-1/4" htmlFor="damageImmunities">Damage Immunities</label>
+                    <label className="text-white font-medium mr-2 w-1/4" htmlFor="damageImmunities">Damage Immunities</label>
                     <input placeholder="Damage Immunities"
                         className="bg-transparent w-3/4 placeholder:text-slate-300 border-2 border-solid border-white rounded text-white font-bold p-2"
                         type="text"

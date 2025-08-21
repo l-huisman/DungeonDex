@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Footer from "@/components/Footer";
-import SearchBar from "@/components/SearchBar";
-import Header from "@/components/Header";
+import Footer from "@/components/footer";
+import SearchBar from "@/components/searchbar";
+import Header from "@/components/header";
 import { CreatureContextProvider } from "@/components/context/CreatureContext";
 import { CreatureFrame } from "@/components/CreatureFrame";
 import { AddCreatureFrame } from "@/components/AddCreatureFrame";
@@ -16,6 +16,7 @@ const HomePage = () => {
 
   const handleAddButtonClick = (isOn: boolean) => {
     setShowCreatureFrame(isOn);
+    return isOn;
   };
 
   return (
